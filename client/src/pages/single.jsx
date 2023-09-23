@@ -1,7 +1,7 @@
 import React from "react";
 
-const single = () => {
-  return <div>single</div>;
+const Single = () => {
+  return <div>Single</div>;
 };
 
-export default single;
+export default Single;
