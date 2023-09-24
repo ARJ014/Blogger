@@ -187,10 +187,198 @@ $lightGreen: #b9e7e7;
       }
     }
 
+    // Single
+    .single {
+      display: flex;
+      gap: 50px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 25px;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 16px;
+
+          img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: $lightGreen;
+            object-fit: cover;
+          }
+
+          span {
+            font-weight: bold;
+          }
+
+          .edit {
+            display: flex;
+            gap: 5px;
+
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        h1 {
+          font-size: 48px;
+          color: #333;
+        }
+        p {
+          text-align: justify;
+          line-height: 30px;
+        }
+      }
+
+      .Menu {
+        flex: 2;
+
+        h1 {
+          font-size: 20px;
+          color: #555;
+        }
+
+        .posts {
+          display: flex;
+          margin-top: 20px;
+          flex-direction: column;
+          gap: 40px;
+
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            img {
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+              border-radius: 25px;
+            }
+
+            h2 {
+              font-size: 24px;
+            }
+
+            button {
+              border-radius: 5px;
+              padding: 5px;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              cursor: pointer;
+
+              &:hover {
+                background-color: $lightGreen;
+                color: black;
+                border: 1px solid $lightGreen;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // Write Post
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: 1px solid lightgray;
+        }
+
+        .editorContainer {
+          height: 300px;
+          overflow: scroll;
+          border: 1px solid lightgray;
+
+          .editor {
+            height: 100%;
+            border: none;
+          }
+        }
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+          border: 1px solid lightgray;
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 15px;
+          color: #555;
+
+          h1 {
+            font-size: 24px;
+          }
+
+          .file {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            :first-child {
+              cursor: pointer;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+            :last-child {
+              cursor: pointer;
+              color: white;
+              background-color: teal;
+              border: 1px solid teal;
+              padding: 3px 5px;
+            }
+          }
+
+          .cat {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: teal;
+          }
+        }
+      }
+    }
+
     // Footer
     footer {
       padding: 20px;
-      margin: 120px;
+      margin: 50px;
       background-color: $lightGreen;
       display: flex;
       align-items: center;
