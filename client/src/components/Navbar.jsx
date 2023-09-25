@@ -10,9 +10,11 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="container">
-        <div className="logo">
-          <img src={Logo} alt="Title image" style={{ width: "120px" }} />
-        </div>
+        <Link to="/">
+          <div className="logo">
+            <img src={Logo} alt="Title image" style={{ width: "120px" }} />
+          </div>
+        </Link>
         <div className="links">
           <Link className="link" to="/?cat=art">
             <h6>ART</h6>
@@ -37,7 +39,7 @@ const Navbar = () => {
             <span onClick={logout}>LogOut</span>
           ) : (
             <Link className="link" to="./login">
-              <span onClick={logout}>LogIn</span>
+              <span>LogIn</span>
             </Link>
           )}
           <span className="write">

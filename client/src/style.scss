@@ -126,6 +126,14 @@ $lightGreen: #b9e7e7;
         flex-direction: column;
         gap: 150px;
 
+        .error {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 32px;
+        }
+
         .post {
           display: flex;
           gap: 50px;
